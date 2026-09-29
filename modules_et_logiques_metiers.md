@@ -117,7 +117,7 @@ Pour cela, il a besoin d'une instance de service.
 C'est là que le décorateur `@Injectable()` prend tout son sens : on peut simplement déclarer un nouvel attribut dans le constructeur du `controller`, et `NestJS` s'occupe de tout, c'est-à-dire que `NestJS` instanciera lui-même le service, et l'injectera au moment de la création du contrôleur. Voici ce à quoi ressemble le constructeur du  `controller` des utilisateurs :
 
 ```typescript
-import { UsersService } from './users.service';
+import { UsersService } from './users.service.js';
 ...
 constructor(
     private service: UsersService

@@ -105,7 +105,7 @@ Dans ce fichier, on va déclarer une nouvelle classe qui répond au besoin ci-de
 Déclarer un tableau d'utilisateurs en constante dans le fichier `UsersController` :
 
 ```typescript
-import { User } from './user.entity';
+import { User } from './user.entity.js';     //il faut ajouter .js sinon erreur
 
 const users : User[] = [
     {
